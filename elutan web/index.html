@@ -33,158 +33,101 @@
     </header>
 
     <section id="home" class="hero">
-    <div class="hero-background">
-        <div class="hero-overlay"></div>
-        <div class="floating-elements">
-            <div class="float-item">🌾</div>
-            <div class="float-item">🐷</div>
-            <div class="float-item">🍯</div>
-            <div class="float-item">🌴</div>
-            <div class="float-item">🍌</div>
-        </div>
-    </div>
+    <!-- Background -->
+    <div class="hero-bg"></div>
     
-  <section id="home" class="hero">
-    <div class="hero-background">
-        <div class="hero-overlay"></div>
-    </div>
-    
-    <div class="hero-mobile-container">
-        <!-- Hero Image First (Mobile Priority) -->
-        <div class="hero-visual">
-            <div class="hero-main-image">
-                <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=1200&q=80" alt="Elutan Farms">
-                <div class="image-overlay"></div>
-            </div>
+    <!-- Main Container -->
+    <div class="hero-wrapper">
+        
+        <!-- Hero Image Card -->
+        <div class="hero-image-card">
+            <img src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?w=1200&q=80" alt="Elutan Farms">
+            <div class="hero-image-overlay"></div>
             
-            <div class="floating-badges">
-                <div class="badge-item badge-1">
-                    <span class="badge-emoji">🌾</span>
-                    <span>Fresh Daily</span>
-                </div>
-                <div class="badge-item badge-2">
-                    <span class="badge-emoji">✓</span>
-                    <span>100% Organic</span>
-                </div>
-                <div class="badge-item badge-3">
-                    <span class="badge-emoji">🚚</span>
-                    <span>Fast Delivery</span>
-                </div>
+            <!-- Image Badges -->
+            <div class="image-badge top-right">
+                <span>✓</span> 100% Organic
+            </div>
+            <div class="image-badge bottom-left">
+                <span>🌾</span> Farm Fresh
             </div>
         </div>
         
         <!-- Hero Content -->
-        <div class="hero-content-mobile">
-            <div class="welcome-tag">
-                <span class="tag-dot"></span>
-                <span>Welcome to Elutan Farms</span>
+        <div class="hero-text-section">
+            
+            <!-- Welcome Badge -->
+            <div class="welcome-badge">
+                <span class="pulse-dot"></span>
+                Welcome to ElutanNigeria
             </div>
             
-            <h1 class="hero-title-mobile">
-                <span class="title-main">Premium Farm</span>
-                <span class="title-sub">Products Direct</span>
-                <span class="title-accent">From Our Fields</span>
+            <!-- Main Heading -->
+            <h1 class="hero-heading">
+                Fresh <span class="text-green">Premium</span><br>
+                Farm Products
             </h1>
             
-            <p class="hero-tagline">
-                Quality livestock, organic produce & sustainable farming. 
-                Fresh, healthy, and delivered to your doorstep.
+            <!-- Subtext -->
+            <p class="hero-subtext">
+                Quality livestock, organic produce, and sustainable farming delivered fresh from our 200+ acre farmland directly to you.
             </p>
             
-            <!-- Quick Stats -->
-            <div class="quick-stats-mobile">
-                <div class="stat-box">
-                    <div class="stat-icon">🌾</div>
-                    <div class="stat-info">
-                        <div class="stat-num">200+</div>
-                        <div class="stat-text">Acres</div>
-                    </div>
+            <!-- Stats Row -->
+            <div class="stats-row">
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Acres</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-icon">📦</div>
-                    <div class="stat-info">
-                        <div class="stat-num">7+</div>
-                        <div class="stat-text">Products</div>
-                    </div>
+                <div class="stat-item">
+                    <div class="stat-number">7+</div>
+                    <div class="stat-label">Products</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-icon">⭐</div>
-                    <div class="stat-info">
-                        <div class="stat-num">100%</div>
-                        <div class="stat-text">Organic</div>
-                    </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Organic</div>
                 </div>
             </div>
             
             <!-- CTA Buttons -->
-            <div class="cta-buttons-mobile">
-                <a href="#products" class="cta-primary">
-                    <span>🛒 Shop Products</span>
+            <div class="hero-cta">
+                <a href="#products" class="btn-main">
+                    Explore Products
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
-                <a href="#order" class="cta-secondary">
-                    <span>📋 Place Order</span>
+                <a href="#order" class="btn-outline">
+                    Place Order
                 </a>
             </div>
             
-            <!-- Product Preview Slider -->
-            <div class="product-preview-slider">
-                <div class="preview-title">Our Popular Products</div>
-                <div class="preview-items">
-                    <div class="preview-card">
-                        <div class="preview-icon">🐷</div>
-                        <div class="preview-name">Livestock</div>
-                    </div>
-                    <div class="preview-card">
-                        <div class="preview-icon">🌴</div>
-                        <div class="preview-name">Palm Oil</div>
-                    </div>
-                    <div class="preview-card">
-                        <div class="preview-icon">🍌</div>
-                        <div class="preview-name">Plantain</div>
-                    </div>
-                    <div class="preview-card">
-                        <div class="preview-icon">🐟</div>
-                        <div class="preview-name">Catfish</div>
-                    </div>
-                    <div class="preview-card">
-                        <div class="preview-icon">🍯</div>
-                        <div class="preview-name">Honey</div>
-                    </div>
+            <!-- Features -->
+            <div class="features-list">
+                <div class="feature-item">
+                    <span class="feature-icon">🚚</span>
+                    <span>Fast Delivery</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">⭐</span>
+                    <span>Top Quality</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">💰</span>
+                    <span>Fair Prices</span>
                 </div>
             </div>
             
-            <!-- Trust Indicators -->
-            <div class="trust-section-mobile">
-                <div class="trust-title">Why Choose Us?</div>
-                <div class="trust-grid">
-                    <div class="trust-card">
-                        <div class="trust-emoji">✓</div>
-                        <div class="trust-label">Certified Organic</div>
-                    </div>
-                    <div class="trust-card">
-                        <div class="trust-emoji">🚀</div>
-                        <div class="trust-label">Fast Response</div>
-                    </div>
-                    <div class="trust-card">
-                        <div class="trust-emoji">💰</div>
-                        <div class="trust-label">Fair Prices</div>
-                    </div>
-                    <div class="trust-card">
-                        <div class="trust-emoji">🎯</div>
-                        <div class="trust-label">Quality Assured</div>
-                    </div>
-                </div>
-            </div>
         </div>
+        
     </div>
     
-    <div class="scroll-indicator-mobile">
-        <span>Swipe up to explore</span>
-        <div class="scroll-line"></div>
+    <!-- Scroll Hint -->
+    <div class="scroll-hint">
+        <div class="scroll-mouse"></div>
+        <span>Scroll Down</span>
     </div>
+    
 </section>
-    </section>
-
+</section>
     <section id="about">
         <h2 class="section-title">About Us</h2>
         <div class="about-content">
@@ -293,191 +236,275 @@
     </div>
 </section>
     <section id="order">
-    <h2 class="section-title">Order Now</h2>
+    <div class="order-header">
+        <h2 class="section-title">Order Fresh Products</h2>
+        <p class="section-subtitle">Select your products and we'll get back to you within 24 hours</p>
+    </div>
+    
     <div class="order-container">
-        <div class="order-intro">
-            <h3>Check Availability & Place Your Order</h3>
-            <p>Select the products you're interested in below and fill out the order form. Our team will contact you within 24 hours to confirm availability, discuss pricing, and arrange delivery to your location.</p>
-            <div class="order-features">
-                <div class="order-feature-item">
-                    <span class="feature-check">✓</span>
-                    <span>Fast Response (24hrs)</span>
-                </div>
-                <div class="order-feature-item">
-                    <span class="feature-check">✓</span>
-                    <span>Flexible Payment Options</span>
-                </div>
-                <div class="order-feature-item">
-                    <span class="feature-check">✓</span>
-                    <span>Direct Farm Delivery</span>
-                </div>
+        
+        <!-- Product Selection Side -->
+        <div class="product-selector">
+            <div class="selector-header">
+                <h3>
+                    <span class="header-icon">🛒</span>
+                    Select Products
+                </h3>
+                <p class="selector-subtitle">Choose one or more items</p>
             </div>
-        </div>
-
-        <div class="order-content">
-            <div class="product-selection">
-                <h3>🌾 Select Products</h3>
-                <p class="selection-subtitle">Choose one or more products you'd like to order</p>
+            
+            <div class="products-list">
                 
-                <div class="product-checklist">
-                    <label class="product-option">
-                        <input type="checkbox" name="products[]" value="Livestock & Pork">
-                        <div class="option-content">
-                            <span class="option-icon">🐷</span>
-                            <div>
-                                <strong>Livestock & Pork</strong>
+                <label class="product-checkbox-card">
+                    <input type="checkbox" name="products[]" value="Livestock & Pork">
+                    <div class="card-content">
+                        <div class="product-left">
+                            <span class="product-emoji">🐷</span>
+                            <div class="product-details">
+                                <h4>Livestock & Pork</h4>
                                 <p>Live pigs or processed pork</p>
                             </div>
                         </div>
-                    </label>
-
-                    <label class="product-option">
-                        <input type="checkbox" name="products[]" value="Palm Oil">
-                        <div class="option-content">
-                            <span class="option-icon">🌴</span>
-                            <div>
-                                <strong>Palm Oil</strong>
+                        <div class="checkmark">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6667 5L7.5 14.1667L3.33334 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                
+                <label class="product-checkbox-card">
+                    <input type="checkbox" name="products[]" value="Palm Oil">
+                    <div class="card-content">
+                        <div class="product-left">
+                            <span class="product-emoji">🌴</span>
+                            <div class="product-details">
+                                <h4>Palm Oil</h4>
                                 <p>Fresh palm oil by the liter</p>
                             </div>
                         </div>
-                    </label>
-
-                    <label class="product-option">
-                        <input type="checkbox" name="products[]" value="Plantain">
-                        <div class="option-content">
-                            <span class="option-icon">🍌</span>
-                            <div>
-                                <strong>Plantain</strong>
+                        <div class="checkmark">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6667 5L7.5 14.1667L3.33334 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                
+                <label class="product-checkbox-card">
+                    <input type="checkbox" name="products[]" value="Plantain">
+                    <div class="card-content">
+                        <div class="product-left">
+                            <span class="product-emoji">🍌</span>
+                            <div class="product-details">
+                                <h4>Plantain</h4>
                                 <p>Fresh ripe or unripe plantains</p>
                             </div>
                         </div>
-                    </label>
-
-                    <label class="product-option">
-                        <input type="checkbox" name="products[]" value="Fresh Catfish">
-                        <div class="option-content">
-                            <span class="option-icon">🐟</span>
-                            <div>
-                                <strong>Fresh Catfish</strong>
+                        <div class="checkmark">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6667 5L7.5 14.1667L3.33334 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                
+                <label class="product-checkbox-card">
+                    <input type="checkbox" name="products[]" value="Fresh Catfish">
+                    <div class="card-content">
+                        <div class="product-left">
+                            <span class="product-emoji">🐟</span>
+                            <div class="product-details">
+                                <h4>Fresh Catfish</h4>
                                 <p>Live or processed catfish</p>
                             </div>
                         </div>
-                    </label>
-
-                    <label class="product-option">
-                        <input type="checkbox" name="products[]" value="Pure Honey">
-                        <div class="option-content">
-                            <span class="option-icon">🍯</span>
-                            <div>
-                                <strong>Pure Honey</strong>
+                        <div class="checkmark">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6667 5L7.5 14.1667L3.33334 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                
+                <label class="product-checkbox-card">
+                    <input type="checkbox" name="products[]" value="Pure Honey">
+                    <div class="card-content">
+                        <div class="product-left">
+                            <span class="product-emoji">🍯</span>
+                            <div class="product-details">
+                                <h4>Pure Honey</h4>
                                 <p>100% natural raw honey</p>
                             </div>
                         </div>
-                    </label>
-
-                    <label class="product-option">
-                        <input type="checkbox" name="products[]" value="Fresh Vegetables">
-                        <div class="option-content">
-                            <span class="option-icon">🥬</span>
-                            <div>
-                                <strong>Fresh Vegetables</strong>
+                        <div class="checkmark">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6667 5L7.5 14.1667L3.33334 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                
+                <label class="product-checkbox-card">
+                    <input type="checkbox" name="products[]" value="Fresh Vegetables">
+                    <div class="card-content">
+                        <div class="product-left">
+                            <span class="product-emoji">🥬</span>
+                            <div class="product-details">
+                                <h4>Fresh Vegetables</h4>
                                 <p>Melon, okra, and seasonal veggies</p>
                             </div>
                         </div>
-                    </label>
-
-                    <label class="product-option">
-                        <input type="checkbox" name="products[]" value="Premium Cocoa">
-                        <div class="option-content">
-                            <span class="option-icon">🍫</span>
-                            <div>
-                                <strong>Premium Cocoa</strong>
+                        <div class="checkmark">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6667 5L7.5 14.1667L3.33334 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                
+                <label class="product-checkbox-card">
+                    <input type="checkbox" name="products[]" value="Premium Cocoa">
+                    <div class="card-content">
+                        <div class="product-left">
+                            <span class="product-emoji">🍫</span>
+                            <div class="product-details">
+                                <h4>Premium Cocoa</h4>
                                 <p>High-quality cocoa beans</p>
                             </div>
                         </div>
-                    </label>
+                        <div class="checkmark">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M16.6667 5L7.5 14.1667L3.33334 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </label>
+                
+            </div>
+            
+            <!-- Quick Info -->
+            <div class="quick-info-box">
+                <div class="info-icon">ℹ️</div>
+                <div class="info-text">
+                    <strong>Need help choosing?</strong><br>
+                    Call us at <a href="tel:+2349024087978">+234 902 408 7978</a>
                 </div>
             </div>
-
-            <form class="order-form" id="orderForm" action="https://formspree.io/f/xblzqgbe" method="POST">
-                <h3>📋 Your Information</h3>
+            
+        </div>
+        
+        <!-- Order Form Side -->
+        <div class="order-form-container">
+            <form class="modern-order-form" id="orderForm" action="https://formspree.io/f/xblzqgbe" method="POST">
                 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Full Name *</label>
-                        <input type="text" id="name" name="name" placeholder="John Doe" required>
-                    </div>
+                <div class="form-header">
+                    <h3>
+                        <span class="header-icon">📋</span>
+                        Your Details
+                    </h3>
+                    <p>Fill in your information below</p>
                 </div>
                 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="email">Email Address *</label>
-                        <input type="email" id="email" name="_replyto" placeholder="john@example.com" required>
+                <div class="form-grid">
+                    
+                    <div class="form-field">
+                        <label for="orderName">
+                            <span class="label-icon">👤</span>
+                            Full Name
+                        </label>
+                        <input type="text" id="orderName" name="name" placeholder="John Doe" required>
                     </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="phone">Phone Number *</label>
-                        <input type="tel" id="phone" name="phone" placeholder="+234 XXX XXX XXXX" required>
+                    
+                    <div class="form-field">
+                        <label for="orderEmail">
+                            <span class="label-icon">📧</span>
+                            Email Address
+                        </label>
+                        <input type="email" id="orderEmail" name="_replyto" placeholder="john@example.com" required>
                     </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="location">Delivery Location *</label>
-                        <input type="text" id="location" name="location" placeholder="City, State" required>
+                    
+                    <div class="form-field">
+                        <label for="orderPhone">
+                            <span class="label-icon">📱</span>
+                            Phone Number
+                        </label>
+                        <input type="tel" id="orderPhone" name="phone" placeholder="+234 XXX XXX XXXX" required>
                     </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="orderType">Order Type *</label>
+                    
+                    <div class="form-field">
+                        <label for="orderLocation">
+                            <span class="label-icon">📍</span>
+                            Delivery Location
+                        </label>
+                        <input type="text" id="orderLocation" name="location" placeholder="City, State" required>
+                    </div>
+                    
+                    <div class="form-field full-width">
+                        <label for="orderType">
+                            <span class="label-icon">🏢</span>
+                            Order Type
+                        </label>
                         <select id="orderType" name="orderType" required>
-                            <option value="">Select Order Type</option>
+                            <option value="">Select order type</option>
                             <option value="wholesale">Wholesale (Bulk Order)</option>
                             <option value="retail">Retail (Individual)</option>
                             <option value="restaurant">Restaurant/Business</option>
                             <option value="export">Export Order</option>
                         </select>
                     </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="quantity">Quantity Details *</label>
-                        <textarea id="quantity" rows="3" name="quantity" placeholder="e.g., 10 pigs, 50 liters palm oil, 20 jars honey..." required></textarea>
+                    
+                    <div class="form-field full-width">
+                        <label for="orderQuantity">
+                            <span class="label-icon">📦</span>
+                            Quantity Details
+                        </label>
+                        <textarea id="orderQuantity" name="quantity" rows="3" placeholder="e.g., 10 pigs, 50 liters palm oil, 20 jars honey..." required></textarea>
                     </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="deliveryDate">Preferred Delivery Date</label>
-                        <input type="date" id="deliveryDate" name="deliveryDate">
+                    
+                    <div class="form-field full-width">
+                        <label for="orderDate">
+                            <span class="label-icon">📅</span>
+                            Preferred Delivery Date
+                        </label>
+                        <input type="date" id="orderDate" name="deliveryDate">
                     </div>
-                </div>
-                
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="additionalInfo">Additional Information</label>
-                        <textarea id="additionalInfo" rows="3" name="additionalInfo" placeholder="Special requests, questions, or additional details..."></textarea>
+                    
+                    <div class="form-field full-width">
+                        <label for="orderNotes">
+                            <span class="label-icon">💬</span>
+                            Additional Notes (Optional)
+                        </label>
+                        <textarea id="orderNotes" name="additionalInfo" rows="3" placeholder="Any special requests or questions..."></textarea>
                     </div>
+                    
                 </div>
                 
-                <input type="text" name="selected_products" id="selectedProducts" placeholder="Selected Products" readonly style="background: #f5f5f5; cursor: not-allowed; margin-bottom: 1rem; padding: 0.75rem; border: 2px solid #e0e0e0; border-radius: 5px; width: 100%;">
-                
+                <!-- Hidden Fields -->
+                <input type="text" name="selected_products" id="selectedProducts" style="display: none;">
                 <input type="text" name="_gotcha" style="display:none">
                 
-                <button type="submit" class="submit-btn">
+                <!-- Submit Button -->
+                <button type="submit" class="submit-order-btn">
                     <span class="btn-text">Submit Order Request</span>
-                    <span class="btn-icon">→</span>
+                    <span class="btn-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </span>
                 </button>
                 
-                <p class="form-note">
-                    <strong>📞 Need help?</strong> Call us at +234 902 408 7978 or email elutanimola.ng.org@gmail.com
-                </p>
+                <!-- Help Text -->
+                <div class="form-footer">
+                    <div class="footer-icon">✅</div>
+                    <div class="footer-text">
+                        We'll review your order and contact you within <strong>24 hours</strong> to confirm availability and pricing.
+                    </div>
+                </div>
+                
             </form>
         </div>
+        
     </div>
 </section>
     <section id="operations">
