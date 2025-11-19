@@ -51,11 +51,14 @@ if (contactForm) {
 }
 
 // Order form handling
+// Order form handling - FIXED VERSION
 const orderForm = document.getElementById('orderForm');
+
 if (orderForm) {
-    const checkboxes = document.querySelectorAll('.product-option input[type="checkbox"]');
+    const checkboxes = document.querySelectorAll('.product-checkbox-card input[type="checkbox"]');
     const selectedProductsInput = document.getElementById('selectedProducts');
 
+    // Update selected products when checkboxes change
     checkboxes.forEach(checkbox => {
         checkbox.addEventListener('change', updateSelectedProducts);
     });
@@ -64,20 +67,61 @@ if (orderForm) {
         const selected = Array.from(checkboxes)
             .filter(cb => cb.checked)
             .map(cb => cb.value);
-        selectedProductsInput.value = selected.join(', ') || 'None selected';
+        
+        if (selectedProductsInput) {
+            selectedProductsInput.value = selected.join(', ') || 'None';
+        }
+        
+        console.log('Selected products:', selected); // For debugging
     }
 
+    // Handle form submission
     orderForm.addEventListener('submit', (e) => {
+        e.preventDefault(); // Prevent default first
+        
         const hasSelection = Array.from(checkboxes).some(cb => cb.checked);
         
         if (!hasSelection) {
-            e.preventDefault();
             alert('Please select at least one product to order.');
             return;
         }
         
+        // Update the hidden field with selected products
         updateSelectedProducts();
-        console.log('Selected Products:', selectedProductsInput.value);
+        
+        // Show loading state
+        const submitBtn = orderForm.querySelector('.submit-order-btn');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<span>Submitting...</span>';
+        submitBtn.disabled = true;
+        
+        // Submit the form
+        const formData = new FormData(orderForm);
+        
+        fetch(orderForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('✅ Thank you! Your order request has been submitted successfully. We will contact you within 24 hours.');
+                orderForm.reset();
+                checkboxes.forEach(cb => cb.checked = false);
+            } else {
+                alert('⚠️ There was an issue submitting your order. Please try again or call us directly.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('⚠️ Network error. Please check your connection and try again.');
+        })
+        .finally(() => {
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+        });
     });
 }
 
